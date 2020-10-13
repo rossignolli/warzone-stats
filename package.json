@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "call-of-duty-api": "^1.2.16",
+    "express": "^4.17.1"
+  },
+  "name": "warzoe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
