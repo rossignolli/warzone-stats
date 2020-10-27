@@ -6,6 +6,19 @@ import styled from 'styled-components';
 const Item = styled.div`
 margin: 10px;
 
+div{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  align-content: center;
+  height: 86px;
+  padding: 5%;
+  width: 45px;
+  background: #FFB100;
+  border-radius: 10px;
+}
+
 `
 
 
@@ -25,90 +38,65 @@ h2, h3{
   color: #FFFF;
 }
 
-div{
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  align-content: center;
-  height: 86px;
-  padding: 5%;
-  background: #FFB100;
-  border-radius: 10px;
-}
+
 `
 
 // IMPLMENTAR A SECTION DE OTHERS STATS
 
 
+type StatsProps = {
+  data: {
+    accuracy: number;
+    assists: number;
+    deaths: number;
+    kills: number;
+    losses: number;
+    suicides: number;
+    score: number;
+    scorePerMinute: number;
+    gamesPlayed: number;
+    timePlayedTotal: number;
+    winLossRatio: number;
+    wins: number;
+    wlRatio: number;
+  },
+}
 
-
- export default function StatusItem(){
+ export default function StatusItem({ data }: StatsProps){
     return (
       <ItemContainer>
 
+     
+
+        {Object.entries(data).map(([key, value]) => {
+    // Pretty straightforward - use key for the key and value for the value.
+    // Just to clarify: unlike object destructuring, the parameter names don't matter here.
+    return (
+      
+    <Item key={key} >
+    <h3> {key} </h3>
+    <div className="container-yellow">
+    <h2> {value.toFixed(0)} </h2>
+    </div>
+    </Item>
+
+
+    )
+
+
+
+})}
+
+        
         <Item>
         <h3>LEVEL</h3>
-        <div className="container-hello">
+        <div className="container-yellow">
         <h2>54</h2>
         </div>
         </Item>
+        
 
-        <Item>
-        <h3>LEVEL</h3>
-        <div className="container-hello">
-        <h2>54</h2>
-        </div>
-        </Item>
 
-        <Item>
-        <h3>LEVEL</h3>
-        <div className="container-hello">
-        <h2>54</h2>
-        </div>
-        </Item>
-
-        <Item>
-        <h3>LEVEL</h3>
-        <div className="container-hello">
-        <h2>54</h2>
-        </div>
-        </Item>
-
-        <Item>
-        <h3>LEVEL</h3>
-        <div className="container-hello">
-        <h2>54</h2>
-        </div>
-        </Item>
-
-        <Item>
-        <h3>LEVELLEVELLEVELLEVELLEVELLEVELLEVEL</h3>
-        <div className="container-hello">
-        <h2>54</h2>
-        </div>
-        </Item>
-
-        <Item>
-        <h3>LEVEL</h3>
-        <div className="container-hello">
-        <h2>54</h2>
-        </div>
-        </Item>
-
-        <Item>
-        <h3>LEVEL</h3>
-        <div className="container-hello">
-        <h2>54</h2>
-        </div>
-        </Item>
-
-        <Item>
-        <h3>LEVEL</h3>
-        <div className="container-hello">
-        <h2>54</h2>
-        </div>
-        </Item>
   
       </ItemContainer>
       

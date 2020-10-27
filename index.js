@@ -1,24 +1,31 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 3333
 const API = require("call-of-duty-api")();
 
+app.use(express.json());
 
 
 
 
-app.get('/', (req, res) => {
+app.post('/', (req, res) => {
 
-    API.login("vitorrossignolli@gmail.com", "casa102030@").then(() => {
-        API.MWwz("Cromox#1784", API.platforms.battle)
-          .then((data) => {
-            res.send(data)
-            console.log(data); // see output
-          })
-          .catch((err) => {
-            console.log(err);
-          });
-      });
+  const {gamerTag, plataform} = req.body
+
+  console.log(gamerTag)
+  console.log(plataform)
+
+
+     API.login("vitorrossignolli@gmail.com", "casa102030@").then(() => {
+        API.MWwz(gamerTag, plataform)
+           .then((data) => {
+             res.send(data)
+             console.log(data); // see output
+           })
+           .catch((err) => {
+             console.log(err);
+           });
+       });
 
 
   

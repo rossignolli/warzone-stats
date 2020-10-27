@@ -8,11 +8,26 @@ align-content: center;
 align-items: center;
 align-content: center;
 width: 100%;
-height: 800px;
 flex-direction: column;
 padding: 20px;
-margin-top: 100%;
+
+
 `
+
+
+export const ContainerStats = styled.div`
+display: flex;
+justify-content: center;
+align-content: center;
+align-items: center;
+align-content: center;
+width: 100%;
+flex-direction: column;
+
+
+
+`
+
 
 
 
@@ -62,6 +77,7 @@ padding: 20px;
 button {
 height: 56px;
 }
+margin-top: 65%;
 `
 
 export const ButtonShare = styled.div`

@@ -14,7 +14,7 @@ export default createGlobalStyle`
 
 body{
     background: #131919 url(${logoImg}) no-repeat;
-    background-size: contain;
+    background-size: auto;
     -webkit-font-smoothing: antialiased;
 }
 
