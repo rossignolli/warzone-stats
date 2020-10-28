@@ -5,6 +5,15 @@ import styled from 'styled-components';
 
 const Item = styled.div`
 margin: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+align-items: center;
+
+h3{
+  margin-bottom: 3px;
+}
 
 div{
   display: flex;
@@ -14,7 +23,7 @@ div{
   align-content: center;
   height: 86px;
   padding: 5%;
-  width: 45px;
+  width: 86px;
   background: #FFB100;
   border-radius: 10px;
 }
@@ -45,59 +54,66 @@ h2, h3{
 
 
 type StatsProps = {
+  level: number;
   data: {
-    accuracy: number;
-    assists: number;
+    contracts: number;
     deaths: number;
-    kills: number;
-    losses: number;
-    suicides: number;
-    score: number;
-    scorePerMinute: number;
+    downs: number;
     gamesPlayed: number;
-    timePlayedTotal: number;
-    winLossRatio: number;
+    kdRatio: number;
+    kills: number;
+    revives: number;
+    scorePerMinute: number;
+    timePlayed: number;
+    tokens: number;
+    topFive: number;
+    topTen: number;
+    topTwentyFive: number;
     wins: number;
-    wlRatio: number;
   },
 }
 
- export default function StatusItem({ data }: StatsProps){
+
+ export default function StatusItem({ data, level }: StatsProps){
     return (
       <ItemContainer>
-
-     
-
-        {Object.entries(data).map(([key, value]) => {
-    // Pretty straightforward - use key for the key and value for the value.
-    // Just to clarify: unlike object destructuring, the parameter names don't matter here.
-    return (
-      
-    <Item key={key} >
-    <h3> {key} </h3>
-    <div className="container-yellow">
-    <h2> {value.toFixed(0)} </h2>
-    </div>
-    </Item>
-
-
-    )
-
-
-
-})}
-
-        
         <Item>
-        <h3>LEVEL</h3>
+        <h3> DEATHS </h3>
         <div className="container-yellow">
-        <h2>54</h2>
+        <h2> {data.deaths} </h2>
         </div>
         </Item>
-        
+        <Item>
+        <h3> DOWNS </h3>
+        <div className="container-yellow">
+        <h2> {data.downs} </h2>
+        </div>
+        </Item>
+        <Item>
+        <h3> KILLS </h3>
+        <div className="container-yellow">
+        <h2> {data.kills} </h2>
+        </div>
+        </Item>
+        <Item>
+        <h3> TOP FIVE </h3>
+        <div className="container-yellow">
+        <h2> {data.topFive} </h2>
+        </div>
+        </Item>
+        <Item>
+        <h3> WINS </h3>
+        <div className="container-yellow">
+        <h2> {data.wins} </h2>
+        </div>
+        </Item>
+        <Item>
+        <h3> Games Played </h3>
+        <div className="container-yellow">
+        <h2> {data.gamesPlayed} </h2>
+        </div>
+        </Item>
 
-
-  
       </ItemContainer>
       
     )

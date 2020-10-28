@@ -63,6 +63,7 @@ h3{
 export const InputContainer = styled.div`
 display: flex;
 width: 100%;
+align-items: center;
 input {
 background: rgba(26, 32, 32, 0.89);
 border-radius: 5px;
@@ -101,6 +102,7 @@ cursor: pointer;
 export const ContainerOther = styled.div`
 display: flex;
 `
+
 
 
 

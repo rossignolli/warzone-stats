@@ -12,8 +12,6 @@ app.post('/', (req, res) => {
 
   const {gamerTag, plataform} = req.body
 
-  console.log(gamerTag)
-  console.log(plataform)
 
 
      API.login("vitorrossignolli@gmail.com", "casa102030@").then(() => {
@@ -24,6 +22,7 @@ app.post('/', (req, res) => {
            })
            .catch((err) => {
              console.log(err);
+             res.json({ error: err })
            });
        });
 
