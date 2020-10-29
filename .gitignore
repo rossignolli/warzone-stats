@@ -1,3 +1,7 @@
 
 node_modules/
+web/node_modules/
+
 .env
+web/yarn.lock
+web/yarn-error.log
