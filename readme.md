@@ -2,7 +2,7 @@
 ---
 <br>
 <h1 align="center">
-    <img alt="" title="" src="web\src\images\warzone-logo-white.png">
+    <img alt="" title="" src="web\src\images\bg.png">
     
 </h1>
 
@@ -11,22 +11,17 @@
 
 ---
 
-A 11ª edição da Semana OmniStack, ocorrida entre 23/03 e 27/03, trouxe como projeto uma aplicação completa e o desafio foi lançado: Criar uma aplicação do zero ao 100% em apenas uma semana usando as principais stacks Javacript, incluindo todo os aspectos de backend front end e o mobile com React native.
+I made this frontend do fetch data from Call of Duty API. It gets your Battle.net scores and gives you a  badge based on your stats. This is my first approach using styled-components with ReactJS. I also made a simple express server to fetch data from the server-side and then send it to the frontend because of the security needed to access Activision API.
 
-### Tecnologias usadas
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+### Techs used
+This application was made using this the following Techs:
 - [Node.js](https://nodejs.org/en/)
-- [Expo](https://expo.io/)
 - [Express](https://expressjs.com/pt-br/)
 - [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev)
+- [Node-CallOfDuty](https://github.com/Lierrmm/Node-CallOfDuty)
+- [styled-components](https://styled-components.com/)
+- [Typescript](https://www.typescriptlang.org/)
 
-Extras:
-
-- Main Libs
-  - [Express](https://expressjs.com/pt-br/)
-  - [KnexJS](http://knexjs.org/)
-  
 
   
 ###
@@ -34,104 +29,72 @@ Extras:
 
 ### ⚙ Como executar este projeto
 
-Podemos considerar este projeto como sendo divido em três partes:
+This project have two "parts"
 
-1. Backend
+1. Backend(mini)
 2. Frontend
-3. Mobile
 
 
 
-### Pré-requisitos
+### Requirements
 
-Ferramentas necessárias:
+Tools needed:
 
 <b>[Git](https://git-scm.com)</b>
 
 <b>[Node.js](https://nodejs.org/en/)</b>
 
-<b>[Expo](https://expo.io)</b>
 
 
-### 🧭 Como executar o Backend
+### 🧭 How to run the backend:
 
 ```bash
-# Clone este repositório
-$ git clone https://github.com/ialexanderbrito/be-the-hero
+# Clone this repo
+$ git clone https://github.com/rossignolli/warzone-stats
 
-# Acesse a pasta do projeto no terminal/cmd
-$ cd be-the-hero
+# Go to the main folder and run
+$ npm install or yarn add
 
-# Vá para a pasta Backend
-$ cd backend
+# Don't forget to create .env file with yours credentials
+USER=youemailhere@mail.com
+PASSWORD=mysupersecretpassword
 
-# Instale as dependências
-$ npm install ou yarn add
+# run the application
+$ node index.js
 
-# Execute a aplicação em modo de desenvolvimento
-$ npm run dev ou yarn dev
-
-# O servidor inciará na porta:3333 - acesse http://localhost:3333 
+# server will start on :3333 - go to http://localhost:3333 
 ```
 
-### 🧭 Como executar o Frontend
+### 🧭 How to run the frontend:
 
 ```bash
-# Clone este repositório
-$ git clone https://github.com/ialexanderbrito/be-the-hero
 
-# Acesse a pasta do projeto no seu terminal/cmd
-$ cd be-the-hero
 
-# Vá para a pasta da aplicação Frontend
-$ cd frontend
+# Go to web/
+$ npm install or yarn add
 
-# Instale as dependências
-$ npm install ou yarn add
 
-# Execute a aplicação
-$ npm start ou yarn start
-
-# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
-```
-
-### 🧭 Como executar o Mobile
-
-```bash
-# Clone este repositório
-$ git clone https://github.com/ialexanderbrito/be-the-hero
-
-# Acesse a pasta do projeto no seu terminal/cmd
-$ cd be-the-hero
-
-# Vá para a pasta da aplicação Mobile
-$ cd mobile
-
-# Instale as dependências
-$ npm install ou yarn add
-
-# Execute a aplicação
-$ expo start
+# Run
+$ yarn start
 
 ```
 
-## Telas
+
+## Screens
+
+
 
 <p align="center">
-    <img alt="" title="" src="imgs/print1.png">
-    <img alt="" title="" src="imgs/print2.png">
-    <img alt="" title="" src="imgs/print3.png">
-    <img alt="" title="" src="imgs/print4.png">
-    <img alt="" title="" src="imgs/print5.png">
-    <img alt="" title="" src="imgs/print6.png">
-    <img alt="" title="" src="imgs/print7.png">
-    <img alt="" title="" src="imgs/print8.png">
-    <img alt="" title="" src="imgs/print9.png">
+    <img alt="" title="" src="https://media4.giphy.com/media/e5qzbPMTEnqC4EsZ7X/giphy.gif">
 </p>
 
-### :mortar_board: Quem ministrou?
 
-A semana foi ministrada pelo [Diego Fernandes](https://github.com/diego3g)
+<p align="center">
+    <img alt="" title="" src="images/Screenshot_2.png">
+    <img alt="" title="" src="images/Screenshot_3.png">
+    <img alt="" title="" src="images/Screenshot_4.png">
+</p>
+
 
 
 

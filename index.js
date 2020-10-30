@@ -12,8 +12,15 @@ console.log(process.env.USER)
 console.log(process.env.PASSWORD)
 
 
+// GET - PEGAR INFORMAÇÃO
+// POST - VOCÊ ENVIA
 
-app.post('/', (req, res) => {
+
+// PATH - VC EDITA UMA INFORMAÇÃO ESPECIFICA
+
+
+
+app.post('/',(req, res) => {
 
   const {gamerTag, plataform} = req.body
 
