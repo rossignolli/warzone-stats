@@ -13,6 +13,24 @@
 
 I develop this frontend do fetch data from Call of Duty API. It gets your Battle.net scores and gives you a  badge based on your stats. This is my first approach using styled-components with ReactJS. I also made a simple express server to fetch data from the server-side and then send it to the frontend because of the security needed to access Activision API.
 
+
+
+### UI/UX 
+
+I also developed the UI/UX from this project. The prototype can be found 
+
+
+
+[![homepage](images/figma.png)](https://www.figma.com/file/xWhVEJSAZDLD7G7gOtKtq0/warzone-stats?node-id=0%3A1 "Redirect to homepage")
+
+
+
+  
+###
+
+
+
+
 ### Techs used
 This application was made using this the following Techs:
 - [Node.js](https://nodejs.org/en/)
@@ -39,7 +57,6 @@ This project have two "parts"
 ### Requirements
 
 Tools needed:
-
 <b>[Git](https://git-scm.com)</b>
 
 <b>[Node.js](https://nodejs.org/en/)</b>
@@ -68,12 +85,8 @@ $ node index.js
 ### 🧭 How to run the frontend:
 
 ```bash
-
-
 # Go to web/
 $ npm install or yarn add
-
-
 # Run
 $ yarn start
 
