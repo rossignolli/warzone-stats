@@ -11,7 +11,7 @@
 
 ---
 
-I made this frontend do fetch data from Call of Duty API. It gets your Battle.net scores and gives you a  badge based on your stats. This is my first approach using styled-components with ReactJS. I also made a simple express server to fetch data from the server-side and then send it to the frontend because of the security needed to access Activision API.
+I develop this frontend do fetch data from Call of Duty API. It gets your Battle.net scores and gives you a  badge based on your stats. This is my first approach using styled-components with ReactJS. I also made a simple express server to fetch data from the server-side and then send it to the frontend because of the security needed to access Activision API.
 
 ### Techs used
 This application was made using this the following Techs:
