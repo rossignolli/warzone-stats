@@ -27,7 +27,7 @@ This application was made using this the following Techs:
 ###
 
 
-### ⚙ Como executar este projeto
+### ⚙ How to setup project
 
 This project have two "parts"
 
@@ -98,9 +98,9 @@ $ yarn start
 
 
 
-### 📱 Minhas redes
+### 📱 My social Media
 
-Quer conversar?
+Let's chat?
 
 <p align="center">
 
