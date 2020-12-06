@@ -122,7 +122,7 @@ const Landing: React.FC = () => {
             color: '#FFF',
       })
       setInfos(undefined)
-      }} id="input-tag"  placeholder="Search for your tag to get the badge" required onChange={e => setTag(e.target.value)} />
+      }} id="input-tag"  placeholder="Search for your tag to get the badge!" required onChange={e => setTag(e.target.value)} />
       <SelectButton defaultValue={"battle"} onChange={e => setPlataform(e.target.value)} >
         <option value="battle">Battle</option>
         <option  value="psn">PSN</option>
