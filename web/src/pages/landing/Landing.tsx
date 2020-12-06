@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { LandingContainer, InputContainer, ButtonShare, HeaderTitle, ContainerOther, ContainerStats  } from '../../styles/pages/landing';
+import { LandingContainer, InputContainer, HeaderTitle, ContainerOther, ContainerStats  } from '../../styles/pages/landing';
 
 import StatusItem from '../../components/StatusItem';
 import api from '../../services/api';
