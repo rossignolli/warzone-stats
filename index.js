@@ -8,10 +8,6 @@ require('dotenv/config');
 app.use(express.json());
 
 
-console.log(process.env.USER)
-console.log(process.env.PASSWORD)
-
-
 // GET - PEGAR INFORMAÇÃO
 // POST - VOCÊ ENVIA
 
