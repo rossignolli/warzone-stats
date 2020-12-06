@@ -39,6 +39,17 @@ app.post('/',(req, res) => {
 })
 
 
+app.get('/',(req, res) => {
+
+
+
+
+  res.json({ sucess: "sucess" })
+  
+})
+
+
+
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
