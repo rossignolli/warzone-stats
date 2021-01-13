@@ -132,6 +132,14 @@ Let's chat?
 
 </p>
 
+### TODOS:
+
+```
+
+BE MORE RESPONSIVE
+
+```
+
 ---
 
 Feito com ❤️ by **Vitor :)**
